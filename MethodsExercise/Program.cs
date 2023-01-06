@@ -25,6 +25,15 @@ namespace MethodsExercise
             return num1 * num2 * num3;
         }
 
+        public static bool IsNumberEven(int number)
+        {
+            if(number % 2 == 0)
+            {
+                return true;
+            }
+            return false;
+
+        }
         static void Main(string[] args)
         {
             // -------------------------------Exercise 1
@@ -51,6 +60,9 @@ namespace MethodsExercise
             var numberOfTiresPerCar = Divide(80, 4);
 
             var airFresheners = Subract(10, 2);
+
+            
+
 
             Console.WriteLine($"We have {amountofCars} cars available");
 
