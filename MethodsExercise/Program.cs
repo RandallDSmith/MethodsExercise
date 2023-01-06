@@ -1,10 +1,23 @@
-﻿namespace MethodsExercise
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace MethodsExercise
 {
     public class Program
     {
+        public static int Sum(int num1, int num2)
+        {
+            var answer = num1 + num2;
+            return answer;
+        }
+
+        public static int Multiply(int num1, int num2, int num3)
+        {
+            return num1 * num2 * num3;
+        }
+
         static void Main(string[] args)
         {
-            // Exercise 1
+            // -------------------------------Exercise 1
             Console.WriteLine("Hello, What is your name?");
             var userName = Console.ReadLine();
 
@@ -19,7 +32,14 @@
 
             Console.WriteLine($"{userName}'s {color} {animal} likes to listen to {band}");
 
+            // ---------------------------------Exercise 2
 
+            var amountofCars = Sum(2, 4);
+
+            var tires = Multiply(60, 2, 4);
+
+            Console.WriteLine($"We have {amountofCars} cars available");
+            Console.WriteLine($"There are {tires} tires in stock");
 
         }
     }
