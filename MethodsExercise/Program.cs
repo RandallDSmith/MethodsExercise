@@ -10,6 +10,16 @@ namespace MethodsExercise
             return answer;
         }
 
+        public static int Subract(int num1, int num2)
+        {
+            return num1 - num2;
+        }
+
+        public static int Divide(int num1, int num2)
+        {
+            return num1 / num2;
+
+        }
         public static int Multiply(int num1, int num2, int num3)
         {
             return num1 * num2 * num3;
@@ -38,8 +48,17 @@ namespace MethodsExercise
 
             var tires = Multiply(60, 2, 4);
 
+            var numberOfTiresPerCar = Divide(80, 4);
+
+            var airFresheners = Subract(10, 2);
+
             Console.WriteLine($"We have {amountofCars} cars available");
+
             Console.WriteLine($"There are {tires} tires in stock");
+
+            Console.WriteLine($"We have enought tires for {numberOfTiresPerCar} cars");
+
+            Console.WriteLine($"We only have {airFresheners} left");
 
         }
     }
