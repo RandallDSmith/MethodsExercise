@@ -61,7 +61,7 @@ namespace MethodsExercise
 
             var airFresheners = Subract(10, 2);
 
-            
+            Console.WriteLine($"{IsNumberEven(9)}");
 
 
             Console.WriteLine($"We have {amountofCars} cars available");
